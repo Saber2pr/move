@@ -3,7 +3,7 @@
 > compile and move less files to anthor directory.
 
 ```bash
-yarn add @saber2pr/mv-less
+yarn add @saber2pr/mv-less -D
 ```
 
 # Usage
