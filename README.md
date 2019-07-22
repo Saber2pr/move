@@ -11,14 +11,14 @@ yarn add @saber2pr/move -D
 ```bash
 move <fromDir> <toDir> ...<excludeExt>
 
-move src lib .ts # exclude .ts file
+move src lib .ts # exclude .tsx file
 
-move src lib .ts .js # exclude .ts .js file
+move src lib .ts .js # exclude .tsx .js file
 ```
 
 # Why
 
-tsc compiler cannot help you to copy files which's extname is not '.ts' to outDir.
+tsc compiler cannot help you to copy files which's extname is not '.ts' or '.tsx' to outDir.
 
 here is one case:
 
@@ -27,11 +27,11 @@ from
 ```
 src
 |-component1
-| |-index.ts
+| |-index.tsx
 | |-style.less
 |
 |-component1
-  |-index.ts
+  |-index.tsx
   |-style.less
 ```
 
@@ -55,8 +55,8 @@ you can
 # compile typescript.
 tsc
 
-# move files.
-move src lib .ts
+# move files exclude .ts and .tsx files.
+move src lib .ts .tsx
 ```
 
 # Author
