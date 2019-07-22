@@ -13,7 +13,9 @@
     "lib/index.*",
     "lib/app.*"
   ],
-  "bin": "./lib/app.js",
+  "bin": {
+    "mvLess": "./lib/app.js"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "test": "tsc && ts-node src/test/test",
