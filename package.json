@@ -1,0 +1,32 @@
+{
+  "name": "@saber2pr/mv-less",
+  "version": "0.0.1",
+  "description": "compile and move less files to anthor directory.",
+  "repository": {
+    "type": "git",
+    "url": "git+___"
+  },
+  "author": "saber2pr",
+  "license": "ISC",
+  "files": [
+    "lib/core/*",
+    "lib/index.*",
+    "lib/app.*"
+  ],
+  "bin": "./lib/app.js",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "tsc && ts-node src/test/test",
+    "start": "tsc --watch",
+    "app": "./lib/app.js src lib"
+  },
+  "devDependencies": {
+    "ts-node": "^8.3.0",
+    "typescript": "^3.4.3"
+  },
+  "dependencies": {
+    "@saber2pr/node": "^0.2.6",
+    "@types/less": "^3.0.0",
+    "less": "^3.9.0"
+  }
+}
