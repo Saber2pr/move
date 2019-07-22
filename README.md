@@ -1,17 +1,19 @@
-# @saber2pr/mv-less
+# @saber2pr/move
 
-> compile and move less files to anthor directory.
+> move files to anthor directory.
 
 ```bash
-yarn add @saber2pr/mv-less -D
+yarn add @saber2pr/move -D
 ```
 
 # Usage
 
 ```bash
-mvLess <fromDir> <toDir>
+move <fromDir> <toDir> ...<excludeExt>
 
-mvLess src lib
+move src lib .ts # exclude .ts file
+
+move src lib .ts .js # exclude .ts .js file
 ```
 
 # Why
@@ -39,12 +41,22 @@ to
 lib
 |-component1
 | |-index.js
-| |-style.css
+| |-style.less
 |
 |-component1
   |-index.js
-  |-style.css
+  |-style.less
 
+```
+
+you can
+
+```bash
+# compile typescript.
+tsc
+
+# move files.
+move src lib .ts
 ```
 
 # Author

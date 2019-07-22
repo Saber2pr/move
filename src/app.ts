@@ -3,10 +3,12 @@
 import mv from "./core";
 import { Terminal } from "@saber2pr/node";
 
-const [from, to] = Terminal.getParams();
+const [from, to, ...excludeExts] = Terminal.getParams();
 
 if (!(from && to)) {
-  throw new TypeError("mvLess: need two arguments(arg1:from, arg2:to).");
+  throw new TypeError(
+    "mv: need two arguments at least(from:string, to:string, excludeExts:string[])."
+  );
 }
 
-mv(from, to).catch(console.log);
+mv(from, to, excludeExts).catch(console.log);
