@@ -4,7 +4,7 @@
   "description": "compile and move less files to anthor directory.",
   "repository": {
     "type": "git",
-    "url": "git+___"
+    "url": "git+https://github.com/Saber2pr/mv-less.git"
   },
   "author": "saber2pr",
   "license": "ISC",
